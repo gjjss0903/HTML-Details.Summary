@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML 태그 details와 summary로 만든 어코디언</title>
+  <link rel="stylesheet" href="./index_files/index.css">
+  <script src="./index_files/jquery-3.7.0.min.js.다운로드"></script>
+  <script src="./index_files/index.js.다운로드"></script>
+</head>
+
+<body>
+
+<div class="html-accoridon">
+  <h1>공지사항</h1>
+  <details open="">
+    <summary>1. 변경사항</summary>
+    <div class="detail-content">
+      회원가입 과정에서 선택적으로 ‘실명 인증된 아이디’로 가입할 수 있는 기능을 신규로 제공하게 되어 이를 반영하였습니다.
+    </div>
+  </details>
+  <details>
+    <summary>2. 변경일자</summary>
+    <div class="detail-content">
+      변경된 ‘개인정보 처리방침’은 2023년 6월 22일자로 효력이 발생됩니다.
+    </div>
+  </details>
+  <details>
+    <summary>3. 이의제기 및 문의</summary>
+    <div class="detail-content">
+      변경된 ‘개인정보 처리방침’ 내용에 대한 문의사항이 있으신 경우, 네이버 고객센터로 접수해 주시면 신속하고 친절하게 안내해드리겠습니다.변경된 ‘개인정보 처리방침’ 내용에 동의하지 않으시는 경우, 개인정보 수집에 기반한 회원제 서비스의 원활한 제공에 제약이 발생할 수 있습니다.이러한 경우 네이버 고객센터로 이의제기를 하실 수 있으며, 당사는 이용자의 서비스 이용 편의를 위한 최선의 지원을 아끼지 않겠습니다.기존 회원께서 일체의 개인정보 수집을 원하지 않으시는 경우, 직접 회원탈퇴 하시거나 네이버 고객센터에 이를 요청하실 수 있습니다.네이버는 앞으로도 회원님의 개인정보를 보다 안전하게 보호할 것을 약속드리며, 더욱 신뢰받는 서비스로 보답하겠습니다.감사합니다.
+    </div>
+  </details>
+  <details>
+    <summary>4. 변경사항</summary>
+    <div class="detail-content">
+      네이버 전자증명서 서비스 개발 및 유지보수 업무 수탁사와 문자 수신(MO) 서비스 업무 수탁사를 추가하고, 소화물 해외 운송 업무 수탁사를 추가하였습니다. 개인정보 처리가 불필요해진 수탁사를 제외하였고, 사명이 변경된 수탁사의 사명을 반영하였습니다.
+    </div>
+  </details>
+</div>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>

@@ -1,0 +1,56 @@
+@import url('http://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('http://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+}
+
+.html-accoridon {
+  width: 600px;
+  margin: 50px auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.418);
+  border-radius: 5px;
+  padding: 40px 20px;
+}
+
+.html-accoridon h1 {
+  margin-top: 0;
+  text-align: center;
+}
+
+details {
+  padding: 0.5em 1em;
+}
+
+details summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+details summary::after {
+  content: '\f107';
+  font-family: fontawesome;
+  float: right;
+}
+
+details[open] summary {
+  font-weight: bold;
+}
+
+details[open] summary::after {
+  content: '\f106';
+  font-weight: normal;
+}
+
+.detail-content {
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 5px;
+  line-height: 1.5em;
+  margin-top: 15px;
+}
